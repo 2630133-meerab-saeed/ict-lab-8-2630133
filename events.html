@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events - Computer Society</title>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Computer Society logo" width="120">
+    </a>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="events.html">Events</a> |
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Events</h1>
+
+    <!-- Task 1: Part B -->
+    <h2>Upcoming Events</h2>
+    <table border="1" cellpadding="6">
+      <caption>Upcoming Events</caption>
+      <thead>
+        <tr>
+          <th scope="col">Event</th>
+          <th scope="col">Date</th>
+          <th scope="col">Venue</th>
+          <th scope="col">Seats</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Intro to HTML <img src="images/logo.png" alt="Logo" width="20"></td>
+          <td>12 Nov</td>
+          <td><a href="https://w3schools.com" target="_blank">Lab 3 (Online Guide)</a></td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Web Workshop</td>
+          <td>19 Nov</td>
+          <td>Lab 2</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Coding Contest</td>
+          <td>26 Nov</td>
+          <td>Auditorium</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>AI Seminar</td>
+          <td>03 Dec</td>
+          <td>Seminar Hall</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total seats</td>
+          <td>300</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Task 1: Part C -->
+    <h2>Weekly Schedule</h2>
+    <table border="1" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td>2:00 PM</td>
+          <td>Web workshop</td>
+        </tr>
+        <tr>
+          <td>4:00 PM</td>
+          <td>Coding practice</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td colspan="2">Seminar (all day)</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Friday</td>
+          <td>10:00 AM</td>
+          <td>Project Discussion</td>
+        </tr>
+        <tr>
+          <td>3:00 PM</td>
+          <td>Hackathon Prep</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td colspan="2">Tech Meetup &amp; Networking</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Task 1: Questions & Answers -->
+    <section>
+      <h2>Task 1: Questions &amp; Answers</h2>
+
+      <p>
+        <strong>Q1: What does colspan do and what does rowspan do?</strong><br>
+        <strong>Ans:</strong> colspan merges a cell horizontally across multiple columns,<br>
+        while rowspan merges a cell vertically across multiple rows.
+      </p>
+
+      <p>
+        <strong>Q2: How many cells must the second Monday row have, and why?</strong><br>
+        <strong>Ans:</strong> It must have only 2 cells because the first Monday cell<br>
+        uses rowspan="2" and already covers the first column of the second row.
+      </p>
+
+      <p>
+        <strong>Q3: Why are column titles written with &lt;th&gt; instead of &lt;td&gt;?</strong><br>
+        <strong>Ans:</strong> &lt;th&gt; defines header cells, which appear bold and centered<br>
+        by default and improve accessibility for screen readers.
+      </p>
+
+      <p>
+        <strong>Q4: Why is the table split into thead, tbody and tfoot?</strong><br>
+        <strong>Ans:</strong> It groups the header, main data, and summary rows separately<br>
+        for better semantic structure, CSS styling, and printing.
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>

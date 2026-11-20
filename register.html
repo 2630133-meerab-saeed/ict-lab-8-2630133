@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Computer Society</title>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Computer Society logo" width="120">
+    </a>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="events.html">Events</a> |
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Register</h1>
+
+    <!-- Complete Registration Form -->
+    <form action="register.html" method="post">
+
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fullname">Full name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="name@example.com">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="03001234567">
+        <br><br>
+
+        <label for="website">Website (optional):</label>
+        <input type="url" id="website" name="website" placeholder="https://">
+        <br><br>
+
+        <label for="semester">Semester:</label>
+        <input type="number" id="semester" name="semester" min="1" max="8">
+        <br><br>
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob">
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <span>Gender:</span>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="dept">Department:</label>
+        <select id="dept" name="dept" multiple>
+          <option value="cs" selected>Computer Science</option>
+          <option value="se">Software Engineering</option>
+          <option value="ee">Electrical Engineering</option>
+          <option value="ai">Artificial Intelligence</option>
+        </select>
+        <br><br>
+
+        <span>Interests:</span>
+        <input type="checkbox" id="web" name="interest" value="web">
+        <label for="web">Web</label>
+        <input type="checkbox" id="ai_int" name="interest" value="ai">
+        <label for="ai_int">AI</label>
+        <input type="checkbox" id="net" name="interest" value="networking">
+        <label for="net">Networking</label>
+        <input type="checkbox" id="gaming" name="interest" value="gaming">
+        <label for="gaming">Gaming</label>
+      </fieldset>
+
+      <br>
+
+      <label for="favcolor">Favourite colour:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#1f3a5f">
+      <br><br>
+
+      <label for="experience">Experience level:</label>
+      <input type="range" id="experience" name="experience" min="1" max="10" value="5">
+      <br><br>
+
+      <label for="photo">Profile photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+      <br><br>
+
+      <label for="about">About you:</label><br>
+      <textarea id="about" name="about" rows="4" cols="40" maxlength="200"></textarea>
+      <br><br>
+
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+
+    </form>
+
+    <!-- Task 3: Questions & Answers -->
+    <section>
+      <h2>Task 3: Questions &amp; Answers</h2>
+
+      <p>
+        <strong>1. Can both radio buttons be selected? Difference in behaviour vs checkboxes?</strong><br>
+        <strong>Ans:</strong> No, only one radio button can be selected because they share the same name.<br>
+        Checkboxes allow selecting multiple options independently at the same time.
+      </p>
+
+      <p>
+        <strong>2. What is the difference between a &lt;button&gt; tag and an &lt;input type="submit"&gt;?</strong><br>
+        <strong>Ans:</strong> &lt;input type="submit"&gt; is an empty tag that only displays plain text.<br>
+        &lt;button&gt; is a container tag that can hold text, icons, images, or HTML formatting.
+      </p>
+
+      <p>
+        <strong>3. How do you choose more than one option with the mouse in a multiple select list?</strong><br>
+        <strong>Ans:</strong> Hold down the Ctrl key (Windows) or Cmd key (Mac) on the keyboard<br>
+        while clicking multiple options with the mouse.
+      </p>
+    </section>
+
+    <!-- Task 4: Validate and Reflect Answers -->
+    <section>
+      <h2>Task 4: Questions &amp; Answers</h2>
+
+      <p>
+        <strong>(a) Why is a password sent with POST instead of GET?</strong><br>
+        <strong>Ans:</strong> GET appends form data to the URL, making passwords visible in the address bar,<br>
+        browser history, and server logs. POST hides data inside the HTTP request body for security.
+      </p>
+
+      <p>
+        <strong>(b) Why is a field that has no name attribute missing from the submitted data?</strong><br>
+        <strong>Ans:</strong> Form data is sent to the server as name=value pairs. Without a name attribute,<br>
+        the browser cannot identify the field and skips it during submission.
+      </p>
+
+      <p>
+        <strong>(c) What extra technology does a real website need to receive and store form data?</strong><br>
+        <strong>Ans:</strong> A real website needs a server-side backend language (such as PHP, Node.js, or Python)<br>
+        and a database (such as MySQL or MongoDB) to receive and store submitted form data.
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>
